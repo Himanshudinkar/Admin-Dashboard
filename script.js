@@ -105,12 +105,14 @@ function localst(){
 
     if(email2 != validemail)
     {
-        window.alert("this email not found");
+        let error = document.querySelector('#erroremail')
+        error.innerHTML = "*Sorry, we could not find your account";
         return false;
     }
     else if(cpsw2 != validpsw)
     {
-        window.alert("wrong password")
+        let error = document.querySelector('#errorpsw')
+        error.innerHTML = "*Incorrect,Password"
         return false;
     }
 }
