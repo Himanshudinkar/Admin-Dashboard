@@ -1,0 +1,94 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.firstpage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin-top: 50px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  height: 500px;
+  width: 700px;
+  position: absolute;
+  left: 280px;
+}
+.firstpage .signupform {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+}
+.firstpage .signupform h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+}
+.firstpage .signupform .foram {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 30px;
+  margin-top: 20px;
+}
+.firstpage .signupform .foram button {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(24, 137, 182);
+  color: white;
+  padding: 15px 25px 15px 25px;
+  border-radius: 5px;
+}
+.firstpage .signupform .foram input {
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 10px 120px 10px 10px;
+}
+.firstpage .photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+.firstpage .photo a {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .firstpage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-top: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    height: 530px;
+    width: 700px;
+    position: absolute;
+    left: 40px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .firstpage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    margin-top: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    height: 830px;
+    width: 400px;
+    position: absolute;
+    left: 12px;
+  }
+}/*# sourceMappingURL=style.css.map */
