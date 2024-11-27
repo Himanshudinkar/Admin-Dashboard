@@ -3,7 +3,13 @@
   padding: 0%;
   box-sizing: border-box;
 }
+body{
+  // background-image: url("/pexels-photo-29525883.webp");
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-color:#a18cd1;
 
+}
 //main classs
 .firstpage {
   display: flex;
@@ -19,6 +25,7 @@
   width: 700px;
   position: absolute;
   left: 280px;
+  background-color: rgb(255, 255, 255);
 
   // only form class
   .signupform {

@@ -14,9 +14,9 @@
             <h1>Sign In</h1>
             <form action="/dasboard/dasboard.html" class="foram">
                 <p id="erroremail"></p>
-                <input type="email" name="" id="email" placeholder="Your Email"onclick="removeformborder('email')">
+                <input type="email" name="" id="email" placeholder="Your Email"onclick="removeformborder('email')" onblur="remove('erroremail')">
                 <p id="errorpsw"></p>
-                <input type="password" name="" id="cpsw" placeholder="Password"onclick="removeformborder('cpsw')">
+                <input type="password" name="" id="cpsw" placeholder="Password"onclick="removeformborder('cpsw')" onblur="remove('errorpsw')">
                 <button onclick="return localst();">Login</button>
             </form>
         </div>

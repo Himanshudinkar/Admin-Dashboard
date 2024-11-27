@@ -119,5 +119,11 @@ function localst(){
 // login page function get item end
 
 
+//onblur function login page
+function remove(arg)
+{
+    let selecterror = document.querySelector(`#${arg}`);
+    selecterror.innerHTML = ""
+}
 
 
