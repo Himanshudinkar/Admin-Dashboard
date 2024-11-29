@@ -147,6 +147,38 @@
   padding: 5px;
   border-bottom: 2px solid rgb(0, 157, 255);
 }
+.website .content .create form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 50px;
+  margin-left: 320px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 60px;
+  border-radius: 10px;
+}
+.website .content .create form label {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+}
+.website .content .create form input {
+  padding: 5px 30px;
+  border-color: #0000ff;
+}
+.website .content .create form button {
+  padding: 10px 10px;
+  margin: 2px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: blue;
+  color: white;
+  font-size: 18px;
+}
 .website .content #myupdatedata input {
   margin-top: 30px;
   margin-left: 40px;
@@ -164,7 +196,7 @@
   margin-left: 20px;
 }
 .website .content .table table {
-  width: 190%;
+  width: 180%;
   margin: 20px auto;
   border-collapse: collapse;
   text-align: left;
@@ -222,6 +254,38 @@
     height: 78px;
     width: 1075px;
     background-color: rgba(11, 56, 169, 0.073);
+  }
+  .website .content .create {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+    margin-left: 20px;
+    padding: 60px;
+    border-radius: 10px;
+  }
+  .website .content .create label {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+  }
+  .website .content .create input {
+    padding: 20px 220px;
+    border-color: #0000ff;
+  }
+  .website .content .create button {
+    padding: 10px 10px;
+    margin: 2px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: blue;
+    color: white;
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 768px) and (max-width: 426px) {

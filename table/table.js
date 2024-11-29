@@ -81,6 +81,30 @@ function finalupdate(id){
 
 
 
+// -------------------------------------------adddata-------------------------------------------
+function insertdata(){
+    let addbrand = document.querySelector('#brand').value;
+    let addproduct = document.querySelector('#product').value;
+    let addprice = document.querySelector('#price').value;
+
+    let data = {
+        brand:addbrand,
+        product:addproduct,
+        price:addprice
+    }
+
+    fetch("http://localhost:3000/product", {
+        method:'POST',
+        headers:{
+            'content-type':'application/json'
+        },
+        body:JSON.stringify(data)
+    })
+    .then(window.alert("Insert Successfully"))
+}
+// -------------------------------------------adddata------------------------------------------------
+
+
 
 //navbar show
 function humnavbar() {
