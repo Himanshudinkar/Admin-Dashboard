@@ -147,129 +147,58 @@
   padding: 5px;
   border-bottom: 2px solid rgb(0, 157, 255);
 }
-.website .content .card {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 50px;
+.website .content #myupdatedata input {
   margin-top: 30px;
+  margin-left: 40px;
+  padding: 5px;
+  border: 2px solid red;
+}
+.website .content #myupdatedata button {
+  padding: 7px 10px;
+  margin: 2px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: rgb(0, 157, 255);
+  color: white;
+  margin-left: 20px;
+}
+.website .content .table table {
+  width: 190%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  text-align: left;
   margin-left: 30px;
 }
-.website .content .card .card1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  padding: 10px 25px 10px 25px;
-  border-radius: 10px;
+.website .content .table th {
+  border: 1px solid #ddd;
+  padding: 8px;
 }
-.website .content .card .card1 img {
-  height: 80px;
-  width: 80px;
+.website .content .table td {
+  border: 1px solid #ddd;
+  padding: 8px;
 }
-.website .content .card .card1 .cardcontent {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
+.website .content .table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
 }
-.website .content .card .card1 .cardcontent p {
-  color: gray;
-  font-style: "Montserrat", sans-serif;
-  font-size: 17px;
+.website .content .table tr:hover {
+  background-color: #f1f1f1;
 }
-.website .content .card .card1 .cardcontent h2 {
-  font-style: "Montserrat", sans-serif;
-  font-weight: 600;
+.website .content .table .action-btn {
+  padding: 5px 10px;
+  margin: 2px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
 }
-.website .content .bigcard {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 50px;
-  margin-top: 50px;
-  margin-left: 30px;
+.website .content .table .delete-btn {
+  background-color: red;
+  color: white;
 }
-.website .content .bigcard .bigcard1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 34px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  padding: 10px 35px 10px 35px;
-  border-radius: 10px;
-}
-.website .content .bigcard .bigcard1 h2 {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-}
-.website .content .bigcard .bigcard1 img {
-  height: 170px;
-  width: 170px;
-}
-.website .content .bigcard .bigcard1 .bigcardcontent {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 20px;
-}
-.website .content .bigcard .bigcard1 .bigcardcontent span {
-  height: 20px;
-  width: 20px;
-  background-color: #0b8e9a;
-  border-radius: 50%;
-  display: inline-block;
-}
-.website .content .bigcard .bigcard1 .bigcardcontent p {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-weight: 500;
-}
-.website .content .bigcard .graph {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: start;
-  gap: 10px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  border-radius: 10px;
-  padding-top: 10px;
-  background-color: rgba(0, 0, 255, 0);
-}
-.website .content .bigcard .graph img {
-  height: 300px;
-  width: 600px;
-}
-.website .content .bigcard .graph h3 {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-weight: 500;
-  margin-left: 20px;
-}
-.website .content .bigcard .graph h4 {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-weight: 500;
-  margin-left: 20px;
-  color: gray;
-}
-.website .content .bigcard .graph h2 {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-weight: 500;
-  margin-left: 20px;
-  color: gray;
+.website .content .table .update-btn {
+  background-color: blue;
+  color: white;
 }
 
 @media screen and (max-width: 768px) {
@@ -294,16 +223,8 @@
     width: 1075px;
     background-color: rgba(11, 56, 169, 0.073);
   }
-  .website .content .card {
-    margin-top: 50px;
-    margin-left: 50px;
-  }
-  .website .content .bigcard {
-    margin-top: 80px;
-    margin-left: 50px;
-  }
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 768px) and (max-width: 426px) {
   .website .navbar {
     display: none;
     position: fixed;
@@ -426,129 +347,4 @@
     padding: 10px 15px 10px 15px;
     border-radius: 360px;
   }
-  .website .content .card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
-    align-items: center;
-    gap: 70px;
-    margin-top: 30px;
-    margin-left: 100px;
-  }
-  .website .content .card .card1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding: 20px 25px 20px 25px;
-    border-radius: 10px;
-  }
-  .website .content .card .card1 img {
-    height: 150px;
-    width: 150px;
-  }
-  .website .content .card .card1 .cardcontent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-  }
-  .website .content .card .card1 .cardcontent p {
-    color: gray;
-    font-style: "Montserrat", sans-serif;
-    font-size: 37px;
-  }
-  .website .content .card .card1 .cardcontent h2 {
-    font-style: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 40px;
-  }
-  .website .content .bigcard {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px;
-    margin-top: 70px;
-    margin-left: 60px;
-  }
-  .website .content .bigcard .bigcard1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 34px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding: 10px 35px 10px 35px;
-    border-radius: 10px;
-  }
-  .website .content .bigcard .bigcard1 h2 {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-  }
-  .website .content .bigcard .bigcard1 img {
-    height: 170px;
-    width: 170px;
-  }
-  .website .content .bigcard .bigcard1 .bigcardcontent {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px;
-  }
-  .website .content .bigcard .bigcard1 .bigcardcontent span {
-    height: 20px;
-    width: 20px;
-    background-color: #0b8e9a;
-    border-radius: 50%;
-    display: inline-block;
-  }
-  .website .content .bigcard .bigcard1 .bigcardcontent p {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: 500;
-  }
-  .website .content .bigcard .graph {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    gap: 10px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 10px;
-    padding-top: 20px;
-    background-color: rgba(0, 0, 255, 0);
-  }
-  .website .content .bigcard .graph img {
-    height: 300px;
-    width: 600px;
-  }
-  .website .content .bigcard .graph h3 {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: 500;
-    margin-left: 20px;
-  }
-  .website .content .bigcard .graph h4 {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: 500;
-    margin-left: 20px;
-    color: gray;
-  }
-  .website .content .bigcard .graph h2 {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: 500;
-    margin-left: 20px;
-    color: gray;
-  }
-}/*# sourceMappingURL=dasboard.css.map */
+}/*# sourceMappingURL=table.css.map */

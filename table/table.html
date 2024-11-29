@@ -17,16 +17,13 @@
       referrerpolicy="no-referrer"
     />
     <title>Document</title>
-    <link rel="stylesheet" href="/dasboard/dasboard.css" />
+    <link rel="stylesheet" href="/table/table.css" />
   </head>
-  <body>
-
+  <body onload="getdata()">
     <!-- whole website start -->
     <section class="website">
-
       <!-- side Navbar section start -->
       <div class="navbar">
-    
         <!-- navbar logo -->
         <div class="logo">
           <img src="/dasboard/images-removebg-preview.png" alt="" />
@@ -41,7 +38,7 @@
             <div class="nav1">
               <div class="special">
                 <img src="/dasboard/icons8-four-squares-48.png" alt="" />
-                <li><a href="">Dashboard</a></li>
+                <li><a href="/dasboard/dasboard.html">Dashboard</a></li>
               </div>
             </div>
 
@@ -58,9 +55,8 @@
               <li><a href="">Create</a></li>
             </div>
           </ul>
-
         </nav>
-         <!-- navbar -->
+        <!-- navbar -->
       </div>
       <!-- side navbar end -->
       <!-- navbar section end -->
@@ -68,11 +64,10 @@
       <!-- main content start -->
 
       <div class="content">
-
         <!-- navbar second row  -->
         <div class="navbar2">
           <div class="bars" onclick="humnavbar()">
-            <i class="fa-solid fa-bars" id="shownav" ></i>
+            <i class="fa-solid fa-bars" id="shownav"></i>
           </div>
 
           <div class="searchbar">
@@ -90,89 +85,29 @@
         <!-- navbar second,row -->
 
         <!-- h1 tag -->
-        <h1>Dasboard</h1>
+        <h1>Table</h1>
         <!-- h1 tag -->
 
-        <!-- card first four small carrd -->
-        <div class="card">
+        <form action="" id="myupdatedata"></form>
 
-          <div class="card1">
-            <img src="/dasboard/visiters.png" alt="" />
-            <div class="cardcontent">
-              <p>Visiters</p>
-              <h2>1,294</h2>
-            </div>
-          </div>
-
-          <div class="card1">
-            <img src="/dasboard/subscriber.png" alt="" />
-            <div class="cardcontent">
-              <p>Subscriber</p>
-              <h2>1,303</h2>
-            </div>
-          </div>
-
-          <div class="card1">
-            <img src="/dasboard/sels.png" alt="" />
-            <div class="cardcontent">
-              <p>Sales</p>
-              <h2>$5,294</h2>
-            </div>
-          </div>
-
-          <div class="card1">
-            <img src="/dasboard/order.png" alt="" />
-            <div class="cardcontent">
-              <p>Order</p>
-              <h2>597</h2>
-            </div>
-          </div>
+        <div class="table">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Brand Name</th>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Delete</th>
+                <th>Update</th>
+              </tr>
+            </thead>
+            <tbody id="tableshow"></tbody>
+          </table>
         </div>
-<!-- card first four small carrd -->
-
-<!-- big card two -->
-        <div class="bigcard">
-
-           <!-- pie chart  -->
-          <div class="bigcard1">
-
-            <h2>Traffic Sources</h2>
-            <img src="/dasboard/pie-chart-svgrepo-com.svg" alt="" />
-
-            <div class="bigcardcontent">
-              <span></span>
-              <p>Search Engines</p>
-              <p>50%</p>
-            </div>
-
-            <div class="bigcardcontent">
-              <span style="background-color:orangered;"></span>
-              <p>Search Engines</p>
-              <p>35%</p>
-            </div>
-
-            <div class="bigcardcontent">
-              <span style="background-color:rgb(255, 171, 14);"></span>
-              <p>Search Engines</p>
-              <p>15%</p>
-            </div>
-
-          </div>
-          <!-- pie chart -->
-
-          <!-- graph chart -->
-          <div class="graph">
-            <h3>Daily Sales</h3>
-            <h4>November 25</h4>
-            <h2>$4,578.58</h2>
-            <img src="/dasboard/magicpattern-svg-chart-1732805910094.png" alt="">
-          </div>
-          <!-- graph chart -->
-        </div>
-        <!-- big card two end -->
       </div>
       <!-- main content end -->
     </section>
-    <script src="/dasboard/script.js"></script>
+    <script src="/table/table.js"></script>
   </body>
 </html>
